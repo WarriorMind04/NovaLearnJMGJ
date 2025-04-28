@@ -24,7 +24,7 @@ const LoginForm = () => {
       const { fullName, favoriteBook } = await login(credentials);
       localStorage.setItem("fullName", fullName);
       localStorage.setItem("favoriteBook", favoriteBook);
-      router.push("/welcome");
+      router.push("/Welcome");
     } catch (err) {
       setError(
         err instanceof Error ? err.message : "Error al conectar con el servidor"

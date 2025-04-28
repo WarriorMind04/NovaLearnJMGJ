@@ -1,7 +1,7 @@
 import { LoginCredentials, LoginResponse, ErrorResponse } from '../interfaces';
 
 export const login = async (credentials: LoginCredentials): Promise<LoginResponse> => {
-  const response = await fetch('http://localhost:3001/api/login', {
+  const response = await fetch('http://localhost:3001/api/students/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
